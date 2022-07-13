@@ -21,7 +21,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/imgContact"
@@ -44,7 +44,6 @@
             android:text="Catherine Kanini"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.158"
             app:layout_constraintStart_toEndOf="@+id/imgContact"
             app:layout_constraintTop_toTopOf="@+id/imgContact" />
 
@@ -57,12 +56,9 @@
             android:layout_marginEnd="8dp"
             android:text="0748383345"
             android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.135"
             app:layout_constraintStart_toEndOf="@+id/imgContact"
-            app:layout_constraintTop_toBottomOf="@+id/tvname"
-            app:layout_constraintVertical_bias="0.137" />
+            app:layout_constraintTop_toBottomOf="@+id/tvemail" />
 
         <TextView
             android:id="@+id/tvemail"
@@ -71,14 +67,11 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:text="catherinekaninni@gmail.com"
+            android:text="kanini@gmail.com"
             android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.687"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvphonenumber"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintStart_toEndOf="@+id/imgContact"
+            app:layout_constraintTop_toBottomOf="@+id/tvname" />
 
         <TextView
             android:id="@+id/tvadress"
@@ -87,14 +80,14 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
             android:text="616korongo road"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.448"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvemail"
-            app:layout_constraintVertical_bias="0.001" />
+            app:layout_constraintStart_toEndOf="@+id/imgContact"
+            app:layout_constraintTop_toBottomOf="@+id/tvphonenumber"
+            app:layout_constraintVertical_bias="0.046" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
